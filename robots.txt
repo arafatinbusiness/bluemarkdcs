@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://bluemark.ae/sitemap.xml
+Sitemap: https://bluemarkdcs.com/sitemap.xml
 
 # Allow crawling of important pages
 Allow: /index.html

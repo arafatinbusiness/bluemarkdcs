@@ -6,7 +6,7 @@
     
     <!-- Home Page - Highest Priority -->
     <url>
-        <loc>https://bluemark.ae/</loc>
+        <loc>https://bluemarkdcs.com/</loc>
         <lastmod>2025-11-16</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
@@ -14,7 +14,7 @@
     
     <!-- About Us Page -->
     <url>
-        <loc>https://bluemark.ae/about</loc>
+        <loc>https://bluemarkdcs.com/about</loc>
         <lastmod>2025-11-16</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
@@ -22,7 +22,7 @@
     
     <!-- Services Pages -->
     <url>
-        <loc>https://bluemark.ae/services</loc>
+        <loc>https://bluemarkdcs.com/services</loc>
         <lastmod>2025-11-16</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
@@ -30,7 +30,7 @@
     
     <!-- Dubai Economy Services (DED) -->
     <url>
-        <loc>https://bluemark.ae/services/ded</loc>
+        <loc>https://bluemarkdcs.com/services/ded</loc>
         <lastmod>2025-11-16</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
@@ -38,7 +38,7 @@
     
     <!-- Tasheel Services -->
     <url>
-        <loc>https://bluemark.ae/services/tasheel</loc>
+        <loc>https://bluemarkdcs.com/services/tasheel</loc>
         <lastmod>2025-11-16</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
@@ -46,7 +46,7 @@
     
     <!-- Amer Center Services -->
     <url>
-        <loc>https://bluemark.ae/services/amer</loc>
+        <loc>https://bluemarkdcs.com/services/amer</loc>
         <lastmod>2025-11-16</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
@@ -54,7 +54,7 @@
     
     <!-- UAE Visa Services -->
     <url>
-        <loc>https://bluemark.ae/services/uae-visa</loc>
+        <loc>https://bluemarkdcs.com/services/uae-visa</loc>
         <lastmod>2025-11-16</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
@@ -62,7 +62,7 @@
     
     <!-- Tourist Visa Services -->
     <url>
-        <loc>https://bluemark.ae/services/tourist-visa</loc>
+        <loc>https://bluemarkdcs.com/services/tourist-visa</loc>
         <lastmod>2025-11-16</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
@@ -70,7 +70,7 @@
     
     <!-- Ejari Services -->
     <url>
-        <loc>https://bluemark.ae/services/ejari</loc>
+        <loc>https://bluemarkdcs.com/services/ejari</loc>
         <lastmod>2025-11-16</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
@@ -78,7 +78,7 @@
     
     <!-- Attestation Services -->
     <url>
-        <loc>https://bluemark.ae/services/attestation</loc>
+        <loc>https://bluemarkdcs.com/services/attestation</loc>
         <lastmod>2025-11-16</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
@@ -86,7 +86,7 @@
     
     <!-- Contact Page -->
     <url>
-        <loc>https://bluemark.ae/contact</loc>
+        <loc>https://bluemarkdcs.com/contact</loc>
         <lastmod>2025-11-16</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
@@ -94,7 +94,7 @@
     
     <!-- Blog Section -->
     <url>
-        <loc>https://bluemark.ae/blog</loc>
+        <loc>https://bluemarkdcs.com/blog</loc>
         <lastmod>2025-11-16</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.5</priority>
@@ -105,7 +105,23 @@
         <loc>https://labinitial.com</loc>
         <lastmod>2025-11-16</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.3</priority>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- Labinitial Portfolio - BlueMark Project -->
+    <url>
+        <loc>https://labinitial.com/portfolio/bluemark-documents-clearing-services</loc>
+        <lastmod>2025-11-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    
+    <!-- Labinitial Web Development Services -->
+    <url>
+        <loc>https://labinitial.com/services/web-development</loc>
+        <lastmod>2025-11-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
     </url>
     
 </urlset>
