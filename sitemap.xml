@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+    
+    <!-- Home Page - Highest Priority -->
+    <url>
+        <loc>https://bluemark.ae/</loc>
+        <lastmod>2025-11-16</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    
+    <!-- About Us Page -->
+    <url>
+        <loc>https://bluemark.ae/about</loc>
+        <lastmod>2025-11-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Services Pages -->
+    <url>
+        <loc>https://bluemark.ae/services</loc>
+        <lastmod>2025-11-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- Dubai Economy Services (DED) -->
+    <url>
+        <loc>https://bluemark.ae/services/ded</loc>
+        <lastmod>2025-11-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- Tasheel Services -->
+    <url>
+        <loc>https://bluemark.ae/services/tasheel</loc>
+        <lastmod>2025-11-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- Amer Center Services -->
+    <url>
+        <loc>https://bluemark.ae/services/amer</loc>
+        <lastmod>2025-11-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- UAE Visa Services -->
+    <url>
+        <loc>https://bluemark.ae/services/uae-visa</loc>
+        <lastmod>2025-11-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- Tourist Visa Services -->
+    <url>
+        <loc>https://bluemark.ae/services/tourist-visa</loc>
+        <lastmod>2025-11-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- Ejari Services -->
+    <url>
+        <loc>https://bluemark.ae/services/ejari</loc>
+        <lastmod>2025-11-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- Attestation Services -->
+    <url>
+        <loc>https://bluemark.ae/services/attestation</loc>
+        <lastmod>2025-11-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- Contact Page -->
+    <url>
+        <loc>https://bluemark.ae/contact</loc>
+        <lastmod>2025-11-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    
+    <!-- Blog Section -->
+    <url>
+        <loc>https://bluemark.ae/blog</loc>
+        <lastmod>2025-11-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <!-- Technology Partner - Labinitial -->
+    <url>
+        <loc>https://labinitial.com</loc>
+        <lastmod>2025-11-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    
+</urlset>
