@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | BlueMark Documents Clearing Services LLC</title>
+    <meta name="description" content="Learn about BlueMark Documents Clearing Services - our story, leadership, and technology partnership with Labinitial for professional UAE document clearing services.">
+    <meta name="keywords" content="BlueMark about, UAE document clearing company, Abdul Hakim, Labinitial partnership, Dubai business services">
+    <meta name="author" content="BlueMark Documents Clearing Services LLC">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="About Us | BlueMark Documents Clearing Services LLC">
+    <meta property="og:description" content="Learn about BlueMark Documents Clearing Services - our story, leadership, and technology partnership with Labinitial for professional UAE document clearing services.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bluemarkdcs.com/about">
+    <meta property="og:image" content="https://bluemarkdcs.com/assets/bluemark_logo.jpg">
+    <meta property="og:site_name" content="BlueMark Documents Clearing Services LLC">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="About Us | BlueMark Documents Clearing Services LLC">
+    <meta name="twitter:description" content="Learn about BlueMark Documents Clearing Services - our story, leadership, and technology partnership with Labinitial for professional UAE document clearing services.">
+    <meta name="twitter:image" content="https://bluemarkdcs.com/assets/bluemark_logo.jpg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://bluemarkdcs.com/about">
+    
+    <!-- Additional SEO Meta Tags -->
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow">
+    <meta name="bingbot" content="index, follow">
+    <meta name="geo.region" content="AE-DU">
+    <meta name="geo.placename" content="Dubai">
+    <meta name="geo.position" content="25.2048;55.2708">
+    <meta name="ICBM" content="25.2048, 55.2708">
+    
+    <!-- Structured Data / Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AboutPage",
+      "name": "About BlueMark Documents Clearing Services LLC",
+      "description": "Professional UAE document clearing services company founded by Abdul Hakim with technology partnership from Labinitial",
+      "url": "https://bluemarkdcs.com/about",
+      "mainEntity": {
+        "@type": "Organization",
+        "name": "BlueMark Documents Clearing Services LLC",
+        "description": "Professional UAE document clearing services including business setup, visa processing, DED services, Amer services, and Tasheel services.",
+        "url": "https://bluemarkdcs.com/",
+        "telephone": "+971-50-123-4567",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Dubai",
+          "addressCountry": "AE"
+        },
+        "founder": {
+          "@type": "Person",
+          "name": "Abdul Hakim"
+        },
+        "provider": {
+          "@type": "Organization",
+          "name": "Labinitial",
+          "url": "https://labinitial.com",
+          "description": "US-based software development company specializing in web development, mobile applications, and enterprise software solutions."
+        }
+      }
+    }
+    </script>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q3DWT69373"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-Q3DWT69373');
+    </script>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Three Dots Menu -->
+    <div class="menu-dots" onclick="toggleSideMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <!-- Side Menu -->
+    <div id="sideMenu" class="side-menu">
+        <div class="side-menu-content">
+            <button class="close-btn" onclick="toggleSideMenu()">&times;</button>
+            <div class="menu-item" onclick="makeCall()">
+                <span class="icon">📞</span>
+                <span>Call Us</span>
+            </div>
+            <div class="menu-item" onclick="openLocation()">
+                <span class="icon">📍</span>
+                <span>Location</span>
+            </div>
+            <div class="menu-item" onclick="openWhatsApp()">
+                <span class="icon">💬</span>
+                <span>WhatsApp</span>
+            </div>
+            <div class="menu-item" onclick="showServices()">
+                <span class="icon">🏢</span>
+                <span>Our Services</span>
+            </div>
+            <div class="menu-item" onclick="showBlogSection(); toggleSideMenu();">
+                <span class="icon">📝</span>
+                <span>Blog</span>
+            </div>
+            <div class="menu-item" onclick="goToHome()">
+                <span class="icon">🏠</span>
+                <span>Home</span>
+            </div>
+            <div class="menu-item" onclick="openAdminLogin()">
+                <span class="icon">🔐</span>
+                <span>Admin Login</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo" onclick="goToHome()" style="cursor: pointer;">
+                <div class="logo-icon">
+                    <img src="/assets/bluemark_logo.jpg" alt="BlueMark Logo" class="logo-img" />
+                </div>
+                <div class="logo-text">
+                    <h1>BlueMark</h1>
+                    <p>Documents Clearing Services LLC</p>
+                </div>
+            </div>
+            <nav class="nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="index.html#services" class="nav-link">Services</a>
+                <a href="index.html#blog" class="nav-link">📝 Blog</a>
+                <a href="about.html" class="nav-link active">About Us</a>
+                <a href="index.html#contact" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- About Us Hero Section -->
+    <section class="about-hero">
+        <div class="container">
+            <div class="about-hero-content">
+                <h1>About BlueMark Documents Clearing Services</h1>
+                <p>Your Trusted Partner for UAE Government Services Since 2025</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Main Content -->
+    <section class="about-us-detailed">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-main">
+                    <div class="about-text">
+                        <h2>Our Story & Leadership</h2>
+                        <p>BlueMark Documents Clearing Services LLC was founded in <strong>2025</strong> by <strong>Abdul Hakim</strong>, an entrepreneur with 3 years of experience in UAE government services and document processing. Under his leadership, BlueMark is establishing itself as a reliable document clearing agency in Dubai.</p>
+                        
+                        <p>Abdul Hakim's growing understanding of UAE government procedures and his commitment to customer satisfaction are the driving forces behind our development. His hands-on approach ensures that every client receives personalized attention and guidance throughout their document processing journey.</p>
+                        
+                        <div class="owner-highlight">
+                            <div class="owner-info">
+                                <h3>Abdul Hakim</h3>
+                                <p class="owner-title">Founder & CEO</p>
+                                <p class="owner-quote">"Our mission is to simplify the complex world of UAE government paperwork, making it accessible and stress-free for businesses and individuals alike."</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-features">
+                        <div class="feature-card">
+                            <div class="feature-icon">🏆</div>
+                            <h4>Expert Team</h4>
+                            <p>Professional staff with extensive experience in UAE government procedures</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">⚡</div>
+                            <h4>Fast Processing</h4>
+                            <p>Efficient document processing with minimal turnaround times</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">🛡️</div>
+                            <h4>100% Compliance</h4>
+                            <p>Full compliance with UAE government regulations and requirements</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">💼</div>
+                            <h4>Comprehensive Services</h4>
+                            <p>End-to-end solutions for all your document clearing needs</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Technology Partnership Section -->
+                <div class="tech-partnership">
+                    <div class="partnership-header">
+                        <h2>Technology Partnership</h2>
+                        <p>Powered by Cutting-Edge Digital Solutions</p>
+                    </div>
+                    
+                    <div class="partnership-content">
+                        <div class="labinitial-info">
+                            <div class="labinitial-logo">
+                                <div class="tech-icon">💻</div>
+                                <h3>Labinitial</h3>
+                                <p class="tech-subtitle">US-Based Software Development Company</p>
+                            </div>
+                            
+                            <div class="labinitial-details">
+                                <p><strong>Labinitial</strong> is a premier US-based software development company founded by <strong>Arafat Hossain</strong>, specializing in creating innovative digital solutions for businesses worldwide. With expertise in web development, mobile applications, and enterprise software, Labinitial has partnered with BlueMark to deliver this state-of-the-art website and digital platform.</p>
+                                
+                                <p>Under the visionary leadership of <strong>Arafat Hossain</strong>, Labinitial has established itself as a trusted technology partner for businesses seeking to enhance their digital presence. The company's commitment to excellence and innovation is reflected in every project they undertake.</p>
+                                
+                                <div class="labinitial-features">
+                                    <div class="tech-feature">
+                                        <span class="feature-badge">🌐</span>
+                                        <span>Modern Web Development</span>
+                                    </div>
+                                    <div class="tech-feature">
+                                        <span class="feature-badge">📱</span>
+                                        <span>Mobile-First Design</span>
+                                    </div>
+                                    <div class="tech-feature">
+                                        <span class="feature-badge">🔒</span>
+                                        <span>Secure & Scalable</span>
+                                    </div>
+                                    <div class="tech-feature">
+                                        <span class="feature-badge">⚡</span>
+                                        <span>Fast Performance</span>
+                                    </div>
+                                    <div class="tech-feature">
+                                        <span class="feature-badge">🔍</span>
+                                        <span>SEO Optimized</span>
+                                    </div>
+                                    <div class="tech-feature">
+                                        <span class="feature-badge">🚀</span>
+                                        <span>Cutting-Edge Technology</span>
+                                    </div>
+                                </div>
+                                
+                                <p class="seo-text">This strategic partnership with <strong>Labinitial</strong> ensures that BlueMark's digital presence is fully optimized for search engines, providing superior visibility and accessibility for clients seeking professional document clearing services in the UAE. The website is built with advanced SEO techniques to rank higher in Google search results for relevant keywords.</p>
+                                
+                                <p><strong>Labinitial.com</strong> showcases the company's extensive portfolio of successful projects and demonstrates their expertise in creating high-performance websites that drive business growth. Their focus on user experience, technical excellence, and search engine optimization makes them the ideal technology partner for BlueMark's digital transformation.</p>
+                                
+                                <div class="visit-labinitial">
+                                    <a href="https://labinitial.com" target="_blank" class="btn btn-outline">
+                                        <span>Visit Labinitial.com</span>
+                                        <span class="external-icon">↗</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>

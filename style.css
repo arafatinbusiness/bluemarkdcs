@@ -3950,6 +3950,378 @@ body {
     background: linear-gradient(135deg, #f8fffe 0%, #f0fdf4 100%);
 }
 
+/* About Page Specific Styles */
+.about-hero {
+    background: linear-gradient(135deg, #059669, #22c55e);
+    color: white;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.about-hero-content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.about-hero-content p {
+    font-size: 1.3rem;
+    opacity: 0.9;
+    margin: 0;
+}
+
+.about-us-detailed {
+    padding: 4rem 0;
+    background: white;
+}
+
+.about-us-detailed .about-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-us-detailed .about-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin-bottom: 4rem;
+    align-items: start;
+}
+
+.about-us-detailed .about-text h2 {
+    font-size: 2.2rem;
+    color: #059669;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.about-us-detailed .about-text p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #374151;
+    margin-bottom: 1.5rem;
+}
+
+.about-us-detailed .owner-highlight {
+    background: linear-gradient(135deg, #dcfce7, #bbf7d0);
+    border-radius: 16px;
+    padding: 2rem;
+    margin-top: 2rem;
+    border-left: 4px solid #22c55e;
+}
+
+.about-us-detailed .owner-info h3 {
+    font-size: 1.8rem;
+    color: #059669;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.about-us-detailed .owner-title {
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.about-us-detailed .owner-quote {
+    font-style: italic;
+    color: #374151;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin: 0;
+    padding-left: 1rem;
+    border-left: 3px solid #22c55e;
+}
+
+.about-us-detailed .about-features {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.about-us-detailed .feature-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e5e7eb;
+    transition: all 0.3s ease;
+}
+
+.about-us-detailed .feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(34, 197, 94, 0.15);
+    border-color: #22c55e;
+}
+
+.about-us-detailed .feature-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.about-us-detailed .feature-card h4 {
+    font-size: 1.3rem;
+    color: #059669;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.about-us-detailed .feature-card p {
+    color: #666;
+    line-height: 1.5;
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+/* Technology Partnership Section for About Page */
+.about-us-detailed .tech-partnership {
+    background: white;
+    border-radius: 20px;
+    padding: 3rem;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e5e7eb;
+    margin-top: 3rem;
+}
+
+.about-us-detailed .partnership-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.about-us-detailed .partnership-header h2 {
+    font-size: 2.2rem;
+    color: #059669;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.about-us-detailed .partnership-header p {
+    font-size: 1.1rem;
+    color: #666;
+    margin: 0;
+}
+
+.about-us-detailed .labinitial-info {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+.about-us-detailed .labinitial-logo {
+    text-align: center;
+    background: linear-gradient(135deg, #f0fdf4, #dcfce7);
+    border-radius: 16px;
+    padding: 2rem;
+    border: 2px solid #bbf7d0;
+}
+
+.about-us-detailed .tech-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.about-us-detailed .labinitial-logo h3 {
+    font-size: 2rem;
+    color: #059669;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.about-us-detailed .tech-subtitle {
+    color: #666;
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.about-us-detailed .labinitial-details p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #374151;
+    margin-bottom: 1.5rem;
+}
+
+.about-us-detailed .labinitial-features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.about-us-detailed .tech-feature {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem;
+    background: #f8fafc;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    color: #374151;
+}
+
+.about-us-detailed .feature-badge {
+    font-size: 1.2rem;
+}
+
+.about-us-detailed .seo-text {
+    background: #f0f9ff;
+    border-left: 4px solid #0ea5e9;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    color: #0369a1;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 2rem 0;
+}
+
+.about-us-detailed .visit-labinitial {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* Mobile Responsive About Page */
+@media (max-width: 768px) {
+    .about-hero {
+        padding: 3rem 0;
+    }
+    
+    .about-hero-content h1 {
+        font-size: 2.2rem;
+    }
+    
+    .about-hero-content p {
+        font-size: 1.1rem;
+    }
+    
+    .about-us-detailed {
+        padding: 3rem 0;
+    }
+    
+    .about-us-detailed .about-main {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        margin-bottom: 3rem;
+    }
+    
+    .about-us-detailed .about-text h2 {
+        font-size: 1.8rem;
+    }
+    
+    .about-us-detailed .owner-highlight {
+        padding: 1.5rem;
+    }
+    
+    .about-us-detailed .owner-info h3 {
+        font-size: 1.5rem;
+    }
+    
+    .about-us-detailed .about-features {
+        gap: 1rem;
+    }
+    
+    .about-us-detailed .feature-card {
+        padding: 1.25rem;
+    }
+    
+    .about-us-detailed .tech-partnership {
+        padding: 2rem;
+        margin: 0 1rem;
+    }
+    
+    .about-us-detailed .partnership-header h2 {
+        font-size: 1.8rem;
+    }
+    
+    .about-us-detailed .labinitial-info {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .about-us-detailed .labinitial-logo {
+        padding: 1.5rem;
+    }
+    
+    .about-us-detailed .tech-icon {
+        font-size: 3rem;
+    }
+    
+    .about-us-detailed .labinitial-features {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+    
+    .about-us-detailed .labinitial-details p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-hero {
+        padding: 2rem 0;
+    }
+    
+    .about-hero-content h1 {
+        font-size: 1.8rem;
+    }
+    
+    .about-hero-content p {
+        font-size: 1rem;
+    }
+    
+    .about-us-detailed {
+        padding: 2rem 0;
+    }
+    
+    .about-us-detailed .about-text h2 {
+        font-size: 1.5rem;
+    }
+    
+    .about-us-detailed .about-text p {
+        font-size: 1rem;
+    }
+    
+    .about-us-detailed .owner-highlight {
+        padding: 1.25rem;
+    }
+    
+    .about-us-detailed .owner-info h3 {
+        font-size: 1.3rem;
+    }
+    
+    .about-us-detailed .owner-quote {
+        font-size: 1rem;
+        padding-left: 0.75rem;
+    }
+    
+    .about-us-detailed .tech-partnership {
+        padding: 1.5rem;
+        margin: 0 0.5rem;
+    }
+    
+    .about-us-detailed .partnership-header h2 {
+        font-size: 1.5rem;
+    }
+    
+    .about-us-detailed .labinitial-logo {
+        padding: 1.25rem;
+    }
+    
+    .about-us-detailed .tech-icon {
+        font-size: 2.5rem;
+    }
+    
+    .about-us-detailed .labinitial-logo h3 {
+        font-size: 1.5rem;
+    }
+    
+    .about-us-detailed .seo-text {
+        padding: 0.75rem 1rem;
+        font-size: 0.95rem;
+    }
+}
+
 .about-header {
     text-align: center;
     margin-bottom: 3rem;
