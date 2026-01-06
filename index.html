@@ -149,9 +149,13 @@
                 <span>Our Services</span>
             </div>
       
-            <div class="menu-item" onclick="showBlogSection(); toggleSideMenu();">
+            <div class="menu-item" onclick="showBlogSection(); toggleSideMenu();" style="display: none;">
                 <span class="icon">📝</span>
                 <span>Blog</span>
+            </div>
+            <div class="menu-item" onclick="window.location.href='journals.html'; toggleSideMenu();">
+                <span class="icon">📚</span>
+                <span>Journals</span>
             </div>
             <div class="menu-item" onclick="showAbout()">
                 <span class="icon">ℹ️</span>
@@ -180,8 +184,9 @@
             <nav class="nav">
                 <a href="#home" class="nav-link active">Home</a>
                 <a href="#" class="nav-link" onclick="showDetailedServices()" onmouseover="showServicesDropdown()" onmouseout="hideServicesDropdown()">Services</a>
-                <a href="#" class="nav-link" onclick="showBlogSection(); return false;" style="cursor: pointer;">📝 Blog</a>
-                <a href="#about" class="nav-link">About Us</a>
+                <a href="#" class="nav-link" onclick="showBlogSection(); return false;" style="cursor: pointer; display: none;">📝 Blog</a>
+                <a href="journals.html" class="nav-link">📚 Journals</a>
+                <a href="about.html" class="nav-link">About Us</a>
                 <a href="#contact" class="nav-link">Contact</a>
             </nav>
         </div>
@@ -213,7 +218,8 @@
                 <div class="hero-buttons">
                     <button class="btn btn-primary" onclick="openEasyApply()">Easy Apply</button>
                     <button class="btn btn-secondary" onclick="showDetailedServices()">Services</button>
-                    <button class="btn btn-secondary" onclick="showBlogSection()">📝 Blog</button>
+                    <button class="btn btn-secondary" onclick="showBlogSection()" style="display: none;">📝 Blog</button>
+                    <button class="btn btn-secondary" onclick="window.location.href='journals.html'">📚 Journals</button>
                 </div>
                 <div class="location-btn" onclick="openLocation()">
                     <span class="icon">📍</span>
@@ -587,6 +593,91 @@
         </div>
     </section>
 
+    <!-- Featured Journal Posts Section -->
+    <section class="featured-journals">
+        <div class="container">
+            <div class="section-header">
+                <h3>📚 Featured Journal Posts</h3>
+                <p>Latest professional insights and guides on UAE document services</p>
+            </div>
+            
+            <div class="journals-grid">
+                <!-- Journal Post 1: Best PRO Services in Dubai -->
+                <div class="journal-card">
+                    <div class="journal-card-header">
+                        <div class="journal-category-badge">Professional Services</div>
+                        <div class="journal-date">December 2025</div>
+                    </div>
+                    <div class="journal-card-image">
+                        <img src="assets/bestprobluemarkdcs.jpg" alt="Best PRO Services in Dubai" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px 8px 0 0;">
+                    </div>
+                    <div class="journal-card-content">
+                        <h4>Best PRO Services in Dubai – Complete Guide</h4>
+                        <p class="journal-excerpt">Running a business in Dubai means dealing with multiple government procedures—visa applications, license renewals, labour approvals, document typing, and more.</p>
+                        <div class="journal-card-meta">
+                            <span class="journal-author">By: Abdul Hakim</span>
+                            <span class="journal-read-time">📖 10 min read</span>
+                        </div>
+                    </div>
+                    <div class="journal-card-footer">
+                        <a href="best-pro-services-dubai-complete-guide-al-rigga-deira-union.html" class="btn btn-primary">Read Full Journal</a>
+                    </div>
+                </div>
+                
+                <!-- Journal Post 2: Corporate PRO Services in Dubai -->
+                <div class="journal-card">
+                    <div class="journal-card-header">
+                        <div class="journal-category-badge">Corporate Services</div>
+                        <div class="journal-date">January 2026</div>
+                    </div>
+                    <div class="journal-card-image">
+                        <img src="assets/PRO Services blog .png" alt="Corporate PRO Services in Dubai" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px 8px 0 0;">
+                    </div>
+                    <div class="journal-card-content">
+                        <h4>Corporate PRO Services in Dubai – Full Breakdown (2026 Guide)</h4>
+                        <p class="journal-excerpt">Everything a Business Owner Needs to Know. Managing a company in Dubai means dealing with continuous government procedures—visa renewals, labour approvals, trade license updates, legal documents, and compliance requirements.</p>
+                        <div class="journal-card-meta">
+                            <span class="journal-author">By: Abdul Hakim</span>
+                            <span class="journal-read-time">📖 12 min read</span>
+                        </div>
+                    </div>
+                    <div class="journal-card-footer">
+                        <a href="corporate-pro-services-dubai-full-breakdown-2026-guide.html" class="btn btn-primary">Read Full Journal</a>
+                    </div>
+                </div>
+                
+                <!-- Journal Post 3: Coming Soon -->
+                <div class="journal-card">
+                    <div class="journal-card-header">
+                        <div class="journal-category-badge">Coming Soon</div>
+                        <div class="journal-date">January 2026</div>
+                    </div>
+                    <div class="journal-card-image" style="background: linear-gradient(135deg, #059669 0%, #047857 100%); height: 200px; display: flex; align-items: center; justify-content: center; border-radius: 8px 8px 0 0;">
+                        <div style="color: white; text-align: center; padding: 1rem;">
+                            <div style="font-size: 3rem; margin-bottom: 0.5rem;">🛂</div>
+                            <h4 style="color: white; margin: 0;">New Journal Coming Soon</h4>
+                        </div>
+                    </div>
+                    <div class="journal-card-content">
+                        <h4>UAE Visa Processing Complete Guide</h4>
+                        <p class="journal-excerpt">Everything you need to know about UAE visas - tourist, residence, employment, investor, and family visa requirements.</p>
+                        <div class="journal-card-meta">
+                            <span class="journal-author">By: BlueMark Team</span>
+                            <span class="journal-read-time">📖 Coming Soon</span>
+                        </div>
+                    </div>
+                    <div class="journal-card-footer">
+                        <button class="btn btn-secondary" disabled>Coming Soon</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section-footer" style="text-align: center; margin-top: 2rem;">
+                <a href="journals.html" class="btn btn-outline">View All Journals →</a>
+            </div>
+        </div>
+    </section>
+
     <!-- About Us Section -->
     <section id="about" class="about-us">
         <div class="container">
@@ -599,7 +690,7 @@
                 <div class="about-main">
                     <div class="about-text">
                         <h4>Our Story & Leadership</h4>
-                        <p>BlueMark Documents Clearing Services LLC was founded by <strong>Abdul Hakim</strong>, a visionary entrepreneur with over 15 years of experience in UAE government services and document processing. Under his leadership, BlueMark has grown to become one of Dubai's most trusted document clearing agencies.</p>
+                        <p>BlueMark Documents Clearing Services LLC was founded by <strong>Abdul Hakim</strong>, a visionary entrepreneur with over 3 years of experience in UAE government services and document processing. Under his leadership, BlueMark has grown to become one of Dubai's most trusted document clearing agencies.</p>
                         
                         <p>Abdul Hakim's deep understanding of UAE government procedures and his commitment to customer satisfaction have been the driving forces behind our success. His hands-on approach ensures that every client receives personalized attention and expert guidance throughout their document processing journey.</p>
                         
@@ -636,67 +727,6 @@
                     </div>
                 </div>
                 
-                <!-- Technology Partnership Section -->
-                <div class="tech-partnership">
-                    <div class="partnership-header">
-                        <h4>Technology Partnership</h4>
-                        <p>Powered by Cutting-Edge Digital Solutions</p>
-                    </div>
-                    
-                    <div class="partnership-content">
-                        <div class="labinitial-info">
-                            <div class="labinitial-logo">
-                                <div class="tech-icon">💻</div>
-                                <h5>Labinitial</h5>
-                                <p class="tech-subtitle">US-Based Software Development Company</p>
-                            </div>
-                            
-                            <div class="labinitial-details">
-                                <p><strong>Labinitial</strong> is a premier US-based software development company founded by <strong>Arafat Hossain</strong>, specializing in creating innovative digital solutions for businesses worldwide. With expertise in web development, mobile applications, and enterprise software, Labinitial has partnered with BlueMark to deliver this state-of-the-art website and digital platform.</p>
-                                
-                                <p>Under the visionary leadership of <strong>Arafat Hossain</strong>, Labinitial has established itself as a trusted technology partner for businesses seeking to enhance their digital presence. The company's commitment to excellence and innovation is reflected in every project they undertake.</p>
-                                
-                                <div class="labinitial-features">
-                                    <div class="tech-feature">
-                                        <span class="feature-badge">🌐</span>
-                                        <span>Modern Web Development</span>
-                                    </div>
-                                    <div class="tech-feature">
-                                        <span class="feature-badge">📱</span>
-                                        <span>Mobile-First Design</span>
-                                    </div>
-                                    <div class="tech-feature">
-                                        <span class="feature-badge">🔒</span>
-                                        <span>Secure & Scalable</span>
-                                    </div>
-                                    <div class="tech-feature">
-                                        <span class="feature-badge">⚡</span>
-                                        <span>Fast Performance</span>
-                                    </div>
-                                    <div class="tech-feature">
-                                        <span class="feature-badge">🔍</span>
-                                        <span>SEO Optimized</span>
-                                    </div>
-                                    <div class="tech-feature">
-                                        <span class="feature-badge">🚀</span>
-                                        <span>Cutting-Edge Technology</span>
-                                    </div>
-                                </div>
-                                
-                                <p class="seo-text">This strategic partnership with <strong>Labinitial</strong> ensures that BlueMark's digital presence is fully optimized for search engines, providing superior visibility and accessibility for clients seeking professional document clearing services in the UAE. The website is built with advanced SEO techniques to rank higher in Google search results for relevant keywords.</p>
-                                
-                                <p><strong>Labinitial.com</strong> showcases the company's extensive portfolio of successful projects and demonstrates their expertise in creating high-performance websites that drive business growth. Their focus on user experience, technical excellence, and search engine optimization makes them the ideal technology partner for BlueMark's digital transformation.</p>
-                                
-                                <div class="visit-labinitial">
-                                    <a href="https://labinitial.com" target="_blank" class="btn btn-outline">
-                                        <span>Visit Labinitial.com</span>
-                                        <span class="external-icon">↗</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -807,7 +837,7 @@
                     <div class="footer-contact">
                         <p>📍 Dubai, UAE</p>
                         <p>📞 +971 50 123 4567</p>
-                        <p>✉️ info@bluemarkdcs.com</p>
+                        <p>✉️ abdulhakimbd010@gmail.com</p>
                     </div>
                     <div class="footer-social">
                         <a href="#" class="social-icon" onclick="openWhatsApp()">
