@@ -66,6 +66,49 @@ export const SERVICES: Service[] = [
   }
 ];
 
+export const DETAILED_SERVICES = [
+  {
+    category: 'Core & High-Demand Services',
+    services: [
+      'Dubai Trade Licence Services',
+      'Dubai Visa Services',
+      'Work Permit & Tasheel Services',
+      'Labour & Immigration Services',
+      'PRO & Government Services'
+    ]
+  },
+  {
+    category: '📄 Essential Processing Services',
+    services: [
+      'Emirates ID, Medical & Typing Services',
+      'Ejari & Tenancy Contract Services',
+      'Document Clearing, Verification & Follow-up Services'
+    ]
+  },
+  {
+    category: '💼 Business Support Services',
+    services: [
+      'Business Bank Account Assistance',
+      'UAE Tax & VAT Assistance'
+    ]
+  },
+  {
+    category: '🌟 Specialized & Value-Added Services',
+    services: [
+      'Golden Visa Assistance',
+      'Freelance Visa / Permit Services',
+      'Medical Insurance Assistance'
+    ]
+  },
+  {
+    category: '⚖️ Legal & Attestation Services',
+    services: [
+      'Document Attestation Services',
+      'Fine Reduction & Legal Assistance'
+    ]
+  }
+];
+
 export const JOURNALS: JournalPost[] = [
   {
     id: '1',
