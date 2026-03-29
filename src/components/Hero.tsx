@@ -48,8 +48,9 @@ export default function Hero() {
               transition={{ duration: 1, ease: "easeOut" }}
               className="max-w-3xl w-full"
             >
-              <h1 className="text-[40px] md:text-[72px] lg:text-[80px] font-[900] text-white lg:text-[#1a1a1a] leading-[1.1] mb-8 tracking-tighter uppercase drop-shadow-[0_10px_10px_rgba(0,0,0,0.5)] lg:drop-shadow-none">
-                <span className="text-[#C41E3A]">BlueMark</span> Documents Clearing Services LLC
+              <h1 className="text-[40px] md:text-[72px] lg:text-[80px] font-[900] text-white lg:text-[#1a1a1a] leading-[1.1] mb-8 tracking-tighter drop-shadow-[0_10px_10px_rgba(0,0,0,0.5)] lg:drop-shadow-none">
+                <span className="text-[#C41E3A] normal-case">BlueMark</span>{' '}
+                <span className="uppercase">Documents Clearing Services LLC</span>
               </h1>
               
               <p className="text-[16px] md:text-[22px] text-white lg:text-[#666666] leading-[1.6] mb-12 max-w-2xl mx-auto lg:mx-0 font-semibold lg:font-medium drop-shadow-lg lg:drop-shadow-none">
