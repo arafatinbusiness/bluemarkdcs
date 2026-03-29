@@ -54,10 +54,14 @@ export default function Navbar() {
       }`}>
         <div className="max-w-7xl mx-auto px-4 flex items-center justify-between">
           <Link to="/" className="flex items-center gap-2">
-            <div className={`w-10 h-10 rounded-xl flex items-center justify-center transition-colors ${
-              isScrolled ? 'bg-[#C41E3A]' : 'bg-white shadow-sm border border-gray-100'
+            <div className={`w-10 h-10 rounded-xl flex items-center justify-center transition-colors overflow-hidden ${
+              isScrolled ? 'bg-white' : 'bg-white shadow-sm border border-gray-100'
             }`}>
-              <span className={`font-black text-2xl ${isScrolled ? 'text-white' : 'text-[#C41E3A]'}`}>B</span>
+              <img 
+                src="/assets/bluemark_logo.png" 
+                alt="BlueMark Logo" 
+                className="w-full h-full object-contain p-1"
+              />
             </div>
             <div className="flex flex-col">
               <span className={`font-black text-xl tracking-tight transition-colors text-gray-900`}>
