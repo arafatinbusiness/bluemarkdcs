@@ -78,8 +78,9 @@ export default function CaptionSlider() {
     <section className="py-20 px-4 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-black text-gray-900 mb-4 uppercase">
-            Why Choose <span className="text-[#C41E3A]">BlueMark</span>
+          <h2 className="text-3xl md:text-4xl font-black text-gray-900 mb-4">
+            <span className="uppercase">Why Choose</span>{' '}
+            <span className="text-[#C41E3A] normal-case">BlueMark</span>
           </h2>
           <div className="w-20 h-1.5 bg-[#C41E3A] mx-auto rounded-full" />
           <p className="mt-6 text-gray-600 max-w-2xl mx-auto font-medium">
