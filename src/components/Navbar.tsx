@@ -64,7 +64,7 @@ export default function Navbar() {
               />
             </div>
             <div className="flex flex-col">
-              <span className={`font-black text-xl tracking-tight transition-colors text-gray-900`}>
+              <span className={`font-black text-xl tracking-tight transition-colors ${isScrolled ? 'text-[#C41E3A]' : 'text-[#C41E3A]'}`}>
                 BlueMark
               </span>
               <span className={`text-xs font-medium transition-colors ${isScrolled ? 'text-gray-600' : 'text-gray-500'}`}>
