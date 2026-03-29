@@ -7,6 +7,7 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Location from './pages/Location';
 import AdminLogin from './pages/AdminLogin';
+import DetailedServicesPage from './pages/DetailedServicesPage';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
@@ -34,6 +35,7 @@ export default function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/location" element={<Location />} />
         <Route path="/admin-login" element={<AdminLogin />} />
+        <Route path="/detailed-services" element={<DetailedServicesPage />} />
       </Routes>
     </Router>
   );

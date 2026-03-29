@@ -2,24 +2,11 @@ import { useNavigate } from 'react-router-dom';
 import { Send, Briefcase, BookOpen, MapPin, Plane, ClipboardList } from 'lucide-react';
 import { motion } from 'motion/react';
 
-interface HeroProps {
-  onShowDetailedServices?: () => void;
-}
-
-export default function Hero({ onShowDetailedServices }: HeroProps) {
+export default function Hero() {
   const navigate = useNavigate();
 
   const handleNavigation = (path: string) => {
     navigate(path);
-  };
-
-  const handleServicesClick = () => {
-    if (onShowDetailedServices) {
-      onShowDetailedServices();
-    } else {
-      const element = document.getElementById('services');
-      if (element) element.scrollIntoView({ behavior: 'smooth' });
-    }
   };
 
   return (
@@ -78,7 +65,7 @@ export default function Hero({ onShowDetailedServices }: HeroProps) {
                 </button>
                 
                 <button 
-                  onClick={handleServicesClick}
+                  onClick={() => handleNavigation('/detailed-services')}
                   className="w-full sm:w-auto bg-white lg:bg-gray-100 text-[#1a1a1a] px-12 py-5 rounded-full font-black text-[16px] hover:bg-[#C41E3A] hover:text-white transition-all duration-500 active:scale-95 uppercase tracking-widest shadow-2xl shadow-black/10"
                 >
                   Services
