@@ -3,6 +3,9 @@ import Home from './pages/Home';
 import ServiceDetail from './pages/ServiceDetail';
 import ApplicationForm from './pages/ApplicationForm';
 import Journals from './pages/Journals';
+import JournalDetail from './pages/JournalDetail';
+import BusinessUpdates from './pages/BusinessUpdates';
+import BusinessUpdateDetail from './pages/BusinessUpdateDetail';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Location from './pages/Location';
@@ -31,6 +34,9 @@ export default function App() {
         <Route path="/apply" element={<ApplicationForm />} />
         <Route path="/apply/:serviceId" element={<ApplicationForm />} />
         <Route path="/journals" element={<Journals />} />
+        <Route path="/journals/:id" element={<JournalDetail />} />
+        <Route path="/business-updates" element={<BusinessUpdates />} />
+        <Route path="/business-update/:id" element={<BusinessUpdateDetail />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/location" element={<Location />} />

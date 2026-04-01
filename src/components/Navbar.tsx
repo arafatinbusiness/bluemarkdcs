@@ -53,23 +53,13 @@ export default function Navbar() {
           : 'bg-transparent py-5'
       }`}>
         <div className="max-w-7xl mx-auto px-4 flex items-center justify-between">
-          <Link to="/" className="flex items-center gap-2">
-            <div className={`w-10 h-10 rounded-xl flex items-center justify-center transition-colors overflow-hidden ${
-              isScrolled ? 'bg-white' : 'bg-white shadow-sm border border-gray-100'
-            }`}>
+          <Link to="/" className="flex items-center">
+            <div className="flex items-center justify-center">
               <img 
                 src="/assets/bluemark_logo.png" 
                 alt="BlueMark Logo" 
-                className="w-full h-full object-contain p-1"
+                className="h-12 w-auto object-contain"
               />
-            </div>
-            <div className="flex flex-col">
-              <span className={`font-black text-xl tracking-tight transition-colors ${isScrolled ? 'text-[#C41E3A]' : 'text-[#C41E3A]'}`}>
-                BlueMark
-              </span>
-              <span className={`text-xs font-medium transition-colors ${isScrolled ? 'text-gray-600' : 'text-gray-500'}`}>
-                Documents Clearing Services LLC
-              </span>
             </div>
           </Link>
 
@@ -133,6 +123,7 @@ export default function Navbar() {
                 <div className="p-5 bg-[#C41E3A] rounded-3xl text-white shadow-lg shadow-red-200">
                   <p className="text-xs font-bold opacity-80 mb-1 uppercase tracking-widest">Need help?</p>
                   <p className="font-black text-lg">+971 566 229 773</p>
+                  <p className="font-black text-lg">04 834 6755</p>
                 </div>
               </div>
             </motion.div>

@@ -10,21 +10,29 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative min-h-[90vh] lg:h-[850px] flex items-start lg:items-center bg-white overflow-hidden pb-12 lg:pb-0 pt-[40vh] lg:pt-0">
-      {/* Mobile Background (Full Bleed) */}
+    <section className="relative min-h-[90vh] lg:h-[850px] flex items-start lg:items-center bg-white overflow-hidden pb-12 lg:pb-0 pt-[55vh] lg:pt-0">
+      {/* Mobile Background (Optimized for 767x1152 portrait image) */}
       <div className="absolute inset-0 z-0 lg:hidden overflow-hidden bg-black">
+        {/* Blurred background for depth */}
         <img 
           src="/assets/hero.jpeg" 
           alt="" 
-          className="absolute inset-0 w-full h-full object-cover blur-2xl scale-140 opacity-60"
+          className="absolute inset-0 w-full h-full object-cover blur-2xl opacity-50 scale-105" 
         />
-        <img 
-          src="/assets/hero.jpeg" 
-          alt="BlueMark Documents Clearing Services Mobile Background" 
-          className="relative w-full h-full object-contain opacity-90 scale-115"
-        />
-        <div className="absolute inset-0 bg-black/40" />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-black/10" />
+        {/* Main image - centered and properly scaled for 767x1152 portrait */}
+        <div className="relative w-full h-full flex items-center justify-center">
+          <img 
+            src="/assets/hero.jpeg" 
+            alt="BlueMark Documents Clearing Services Mobile Background" 
+            className="h-full w-auto max-w-none object-contain"
+          />
+        </div>
+        {/* Enhanced gradient overlays for better text readability */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-black/70" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-black/50" />
+        {/* Side gradients to handle portrait image on landscape screens */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/40 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-l from-black/40 to-transparent" />
       </div>
 
       {/* Desktop Background (Right Side Only to fix zoom) */}
@@ -48,12 +56,12 @@ export default function Hero() {
               transition={{ duration: 1, ease: "easeOut" }}
               className="max-w-3xl w-full"
             >
-              <h1 className="text-[40px] md:text-[72px] lg:text-[80px] font-[900] text-white lg:text-[#1a1a1a] leading-[1.1] mb-8 tracking-tighter drop-shadow-[0_10px_10px_rgba(0,0,0,0.5)] lg:drop-shadow-none">
+              <h1 className="text-[32px] sm:text-[40px] md:text-[72px] lg:text-[80px] font-[900] text-white lg:text-[#1a1a1a] leading-[1.1] mb-6 md:mb-8 tracking-tighter drop-shadow-[0_4px_8px_rgba(0,0,0,0.8)] lg:drop-shadow-none">
                 <span className="text-[#C41E3A] normal-case">BlueMark</span>{' '}
                 <span className="uppercase">Documents Clearing Services LLC</span>
               </h1>
               
-              <p className="text-[16px] md:text-[22px] text-white lg:text-[#666666] leading-[1.6] mb-12 max-w-2xl mx-auto lg:mx-0 font-semibold lg:font-medium drop-shadow-lg lg:drop-shadow-none">
+              <p className="text-[14px] sm:text-[16px] md:text-[22px] text-white lg:text-[#666666] leading-[1.5] md:leading-[1.6] mb-8 md:mb-12 max-w-2xl mx-auto lg:mx-0 font-bold md:font-semibold lg:font-medium drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] lg:drop-shadow-none px-2 sm:px-0">
                 UAE Business, Visa, PRO and Government Paperwork Solutions.
               </p>
 
@@ -81,18 +89,18 @@ export default function Hero() {
               </div>
 
               {/* Trust Indicators */}
-              <div className="mt-12 pt-8 border-t border-white/20 lg:border-gray-100 grid grid-cols-3 gap-4 text-white lg:text-[#1a1a1a]/40">
-                <div className="flex flex-col items-center lg:flex-row lg:items-center gap-2 lg:gap-3">
-                  <Plane size={24} className="text-[#C41E3A] lg:w-8 lg:h-8" />
-                  <span className="text-[7px] md:text-[10px] font-black uppercase tracking-[0.1em] md:tracking-[0.2em] drop-shadow-md lg:drop-shadow-none text-center lg:text-left">Global Reach</span>
+              <div className="mt-8 md:mt-12 pt-6 md:pt-8 border-t border-white/30 lg:border-gray-100 grid grid-cols-3 gap-3 md:gap-4 text-white lg:text-[#1a1a1a]/40">
+                <div className="flex flex-col items-center lg:flex-row lg:items-center gap-1 md:gap-2 lg:gap-3">
+                  <Plane size={20} className="text-[#C41E3A] md:w-6 md:h-6 lg:w-8 lg:h-8" />
+                  <span className="text-[6px] sm:text-[7px] md:text-[10px] font-black uppercase tracking-[0.05em] sm:tracking-[0.1em] md:tracking-[0.2em] drop-shadow-[0_1px_2px_rgba(0,0,0,0.8)] lg:drop-shadow-none text-center lg:text-left">PRO Service</span>
                 </div>
-                <div className="flex flex-col items-center lg:flex-row lg:items-center gap-2 lg:gap-3">
-                  <ClipboardList size={24} className="text-[#C41E3A] lg:w-8 lg:h-8" />
-                  <span className="text-[7px] md:text-[10px] font-black uppercase tracking-[0.1em] md:tracking-[0.2em] drop-shadow-md lg:drop-shadow-none text-center lg:text-left">Fast Processing</span>
+                <div className="flex flex-col items-center lg:flex-row lg:items-center gap-1 md:gap-2 lg:gap-3">
+                  <ClipboardList size={20} className="text-[#C41E3A] md:w-6 md:h-6 lg:w-8 lg:h-8" />
+                  <span className="text-[6px] sm:text-[7px] md:text-[10px] font-black uppercase tracking-[0.05em] sm:tracking-[0.1em] md:tracking-[0.2em] drop-shadow-[0_1px_2px_rgba(0,0,0,0.8)] lg:drop-shadow-none text-center lg:text-left">Fast Processing</span>
                 </div>
-                <div className="flex flex-col items-center lg:flex-row lg:items-center gap-2 lg:gap-3">
-                  <Briefcase size={24} className="text-[#C41E3A] lg:w-8 lg:h-8" />
-                  <span className="text-[7px] md:text-[10px] font-black uppercase tracking-[0.1em] md:tracking-[0.2em] drop-shadow-md lg:drop-shadow-none text-center lg:text-left">Expert Advisory</span>
+                <div className="flex flex-col items-center lg:flex-row lg:items-center gap-1 md:gap-2 lg:gap-3">
+                  <Briefcase size={20} className="text-[#C41E3A] md:w-6 md:h-6 lg:w-8 lg:h-8" />
+                  <span className="text-[6px] sm:text-[7px] md:text-[10px] font-black uppercase tracking-[0.05em] sm:tracking-[0.1em] md:tracking-[0.2em] drop-shadow-[0_1px_2px_rgba(0,0,0,0.8)] lg:drop-shadow-none text-center lg:text-left">Expert Advisory</span>
                 </div>
               </div>
             </motion.div>

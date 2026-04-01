@@ -3,6 +3,7 @@ import Hero from '../components/Hero';
 import ServicesOverview from '../components/ServicesOverview';
 import TrustSection from '../components/TrustSection';
 import CaptionSlider from '../components/CaptionSlider';
+import BusinessUpdateSection from '../components/BusinessUpdateSection';
 import JournalSection from '../components/JournalSection';
 import AboutSection from '../components/AboutSection';
 import PartnersSection from '../components/PartnersSection';
@@ -17,6 +18,7 @@ export default function Home() {
       <ServicesOverview />
       <TrustSection />
       <CaptionSlider />
+      <BusinessUpdateSection />
       <JournalSection />
       <AboutSection />
       <PartnersSection />

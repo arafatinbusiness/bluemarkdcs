@@ -41,7 +41,7 @@ const SLIDES = [
   },
   {
     id: 5,
-    title: "Global Reach & Local Expertise",
+    title: "PRO Service & Local Expertise",
     description: "International standards with deep understanding of UAE regulatory landscape",
     icon: <Users className="text-[#C41E3A]" size={48} />,
     color: "from-rose-50 to-white",

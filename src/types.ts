@@ -12,4 +12,16 @@ export interface JournalPost {
   excerpt: string;
   date: string;
   image: string;
+  content?: string;
+}
+
+export interface BusinessUpdate {
+  id: string;
+  title: string;
+  excerpt: string;
+  date: string;
+  image: string;
+  content?: string;
+  category?: string;
+  socialMediaPlatform?: string;
 }

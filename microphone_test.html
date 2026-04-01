@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microphone Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .status {
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .success {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        .error {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        .warning {
+            background-color: #fff3cd;
+            color: #856404;
+            border: 1px solid #ffeaa7;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 10px 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        button:disabled {
+            background-color: #6c757d;
+            cursor: not-allowed;
+        }
+        #audioVisualizer {
+            width: 100%;
+            height: 100px;
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+            margin: 20px 0;
+            position: relative;
+        }
+        .bar {
+            position: absolute;
+            bottom: 0;
+            width: 4px;
+            background-color: #28a745;
+            margin: 0 1px;
+        }
+        .device-list {
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+            max-height: 200px;
+            overflow-y: auto;
+        }
+        .device-item {
+            padding: 5px;
+            border-bottom: 1px solid #dee2e6;
+        }
+        .device-item:last-child {
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Microphone Test Page</h1>
+    
+    <div id="status" class="status warning">
+        <p>Click "Start Test" to begin microphone testing.</p>
+    </div>
+    
+    <div>
+        <button id="startBtn">Start Test</button>
+        <button id="stopBtn" disabled>Stop Test</button>
+        <button id="listDevicesBtn">List Devices</button>
+    </div>
+    
+    <div id="deviceList" class="device-list" style="display: none;">
+        <h3>Available Audio Input Devices:</h3>
+        <div id="devices"></div>
+    </div>
+    
+    <div id="audioVisualizer"></div>
+    
+    <div id="instructions">
+        <h3>Instructions:</h3>
+        <ol>
+            <li>Click "Start Test" - Chrome will ask for microphone permission</li>
+            <li>Grant permission to use your microphone</li>
+            <li>Speak into your microphone - you should see the visualizer move</li>
+            <li>Click "List Devices" to see all detected audio input devices</li>
+            <li>Look for "Ryzen HD Audio Controller Analog Stereo" or similar</li>
+        </ol>
+        
+        <h3>Troubleshooting:</h3>
+        <ul>
+            <li>If no permission prompt appears, check Chrome settings: <code>chrome://settings/content/microphone</code></li>
+            <li>If no devices appear, your microphone may not be detected by Chrome</li>
+            <li>Try closing other applications that might be using the microphone</li>
+            <li>Restart Chrome if issues persist</li>
+        </ul>
+    </div>
+
+    <script>
+        let audioContext;
+        let analyser;
+        let microphone;
+        let javascriptNode;
+        let isRecording = false;
+        const bars = 64;
+        
+        const statusDiv = document.getElementById('status');
+        const startBtn = document.getElementById('startBtn');
+        const stopBtn = document.getElementById('stopBtn');
+        const listDevicesBtn = document.getElementById('listDevicesBtn');
+        const deviceListDiv = document.getElementById('deviceList');
+        const devicesDiv = document.getElementById('devices');
+        const visualizer = document.getElementById('audioVisualizer');
+        
+        // Create visualizer bars
+        for (let i = 0; i < bars; i++) {
+            const bar = document.createElement('div');
+            bar.className = 'bar';
+            bar.style.left = `${(i / bars) * 100}%`;
+            bar.style.height = '0px';
+            visualizer.appendChild(bar);
+        }
+        const barElements = document.querySelectorAll('.bar');
+        
+        function updateStatus(message, type = 'warning') {
+            statusDiv.textContent = message;
+            statusDiv.className = `status ${type}`;
+        }
+        
+        async function listAudioDevices() {
+            try {
+                const devices = await navigator.mediaDevices.enumerateDevices();
+                const audioInputs = devices.filter(device => device.kind === 'audioinput');
+                
+                devicesDiv.innerHTML = '';
+                
+                if (audioInputs.length === 0) {
+                    devicesDiv.innerHTML = '<p class="device-item">No audio input devices found.</p>';
+                } else {
+                    audioInputs.forEach((device, index) => {
+                        const div = document.createElement('div');
+                        div.className = 'device-item';
+                        div.innerHTML = `
+                            <strong>Device ${index + 1}:</strong> ${device.label || `Unknown Device (${device.deviceId})`}<br>
+                            <small>ID: ${device.deviceId}</small>
+                        `;
+                        devicesDiv.appendChild(div);
+                    });
+                }
+                
+                deviceListDiv.style.display = 'block';
+                updateStatus(`Found ${audioInputs.length} audio input device(s)`, 'success');
+                
+            } catch (error) {
+                updateStatus(`Error listing devices: ${error.message}`, 'error');
+            }
+        }
+        
+        async function startTest() {
+            try {
+                updateStatus('Requesting microphone access...', 'warning');
+                
+                // Get microphone stream
+                const stream = await navigator.mediaDevices.getUserMedia({
+                    audio: {
+                        echoCancellation: false,
+                        noiseSuppression: false,
+                        autoGainControl: false
+                    }
+                });
+                
+                // Create audio context
+                audioContext = new (window.AudioContext || window.webkitAudioContext)();
+                analyser = audioContext.createAnalyser();
+                microphone = audioContext.createMediaStreamSource(stream);
+                
+                // Connect nodes
+                microphone.connect(analyser);
+                analyser.fftSize = 256;
+                
+                // Create script processor for visualization
+                javascriptNode = audioContext.createScriptProcessor(2048, 1, 1);
+                analyser.connect(javascriptNode);
+                javascriptNode.connect(audioContext.destination);
+                
+                // Process audio data
+                javascriptNode.onaudioprocess = function() {
+                    const array = new Uint8Array(analyser.frequencyBinCount);
+                    analyser.getByteFrequencyData(array);
+                    
+                    // Update visualizer
+                    for (let i = 0; i < bars; i++) {
+                        const index = Math.floor(i * array.length / bars);
+                        const value = array[index];
+                        const height = Math.max(1, (value / 255) * 100);
+                        barElements[i].style.height = `${height}%`;
+                    }
+                };
+                
+                isRecording = true;
+                startBtn.disabled = true;
+                stopBtn.disabled = false;
+                
+                updateStatus('Microphone is active! Speak into your microphone. You should see the visualizer move.', 'success');
+                
+            } catch (error) {
+                if (error.name === 'NotAllowedError') {
+                    updateStatus('Microphone permission denied. Please allow microphone access in Chrome settings.', 'error');
+                } else if (error.name === 'NotFoundError') {
+                    updateStatus('No microphone found. Please check your microphone connection.', 'error');
+                } else {
+                    updateStatus(`Error: ${error.message}`, 'error');
+                }
+            }
+        }
+        
+        function stopTest() {
+            if (javascriptNode) {
+                javascriptNode.disconnect();
+                javascriptNode = null;
+            }
+            if (microphone) {
+                microphone.disconnect();
+                microphone = null;
+            }
+            if (audioContext) {
+                audioContext.close();
+                audioContext = null;
+            }
+            
+            // Reset visualizer
+            barElements.forEach(bar => {
+                bar.style.height = '0px';
+            });
+            
+            isRecording = false;
+            startBtn.disabled = false;
+            stopBtn.disabled = true;
+            
+            updateStatus('Test stopped. Click "Start Test" to try again.', 'warning');
+        }
+        
+        // Event listeners
+        startBtn.addEventListener('click', startTest);
+        stopBtn.addEventListener('click', stopTest);
+        listDevicesBtn.addEventListener('click', listAudioDevices);
+        
+        // Update initial status
+        updateStatus('Ready to test microphone. Click "Start Test" to begin.', 'warning');
+    </script>
+</body>
+</html>

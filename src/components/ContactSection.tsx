@@ -40,7 +40,8 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <h4 className="font-bold text-xl text-gray-900 mb-1">Call Us</h4>
-                  <p className="text-gray-600">+971 566 229 773</p>
+                  <p className="text-gray-600">+971 566 229 773 (Mobile)</p>
+                  <p className="text-gray-600">04 834 6755 (Landline)</p>
                   <p className="text-gray-600">Available 24/7 for urgent inquiries</p>
                 </div>
               </div>

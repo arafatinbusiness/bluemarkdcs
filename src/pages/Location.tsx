@@ -80,7 +80,8 @@ export default function Location() {
                   </div>
                   <div>
                     <p className="text-xs font-black text-gray-400 uppercase tracking-widest mb-1">Call Us</p>
-                    <p className="font-bold text-gray-900">+971 566 229 773</p>
+                    <p className="font-bold text-gray-900">+971 566 229 773 (Mobile)</p>
+                    <p className="font-bold text-gray-900">04 834 6755 (Landline)</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">

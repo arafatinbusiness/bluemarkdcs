@@ -109,33 +109,5 @@ export const DETAILED_SERVICES = [
   }
 ];
 
-export const JOURNALS: JournalPost[] = [
-  {
-    id: '1',
-    title: 'Navigating the 2024 UAE Labor Law Amendments',
-    excerpt: 'A strategic overview of the latest MOHRE updates and their implications for corporate compliance and employee relations.',
-    date: 'March 15, 2024',
-    image: 'https://picsum.photos/seed/law/800/600'
-  },
-  {
-    id: '2',
-    title: 'The Golden Visa: A Gateway to Long-term Residency',
-    excerpt: 'Detailed analysis of the expanded eligibility criteria for investors, professionals, and exceptional talents under the new UAE residency framework.',
-    date: 'March 10, 2024',
-    image: 'https://picsum.photos/seed/visa/800/600'
-  },
-  {
-    id: '3',
-    title: 'Strategic Advantages of Dubai Freezone Formations',
-    excerpt: 'Comparing the regulatory benefits and operational efficiencies of major Dubai freezones for international business expansion.',
-    date: 'March 5, 2024',
-    image: 'https://picsum.photos/seed/business/800/600'
-  },
-  {
-    id: '4',
-    title: 'Optimizing Corporate Governance through PRO Outsourcing',
-    excerpt: 'How professional government relations management reduces operational risk and enhances administrative efficiency for SMEs.',
-    date: 'March 1, 2024',
-    image: 'https://picsum.photos/seed/pro/800/600'
-  }
-];
+// Re-export blog posts from the centralized registry
+export { BLOG_POSTS as JOURNALS } from './data/blog-posts';
