@@ -5,9 +5,11 @@ import corporateProServicesBreakdown2026 from './corporate-pro-services-dubai-fu
 import businessSetupGuide2024 from './business-setup-guide-2024';
 import dubaiInvestorVisaProcess2026 from './dubai-investor-visa-process-2026';
 import tradeLicenseRenewal2026 from './trade-license-renewal-dubai-2026';
+import tradeLicenseRenewalCompleteGuide2026 from './trade-license-renewal-dubai-complete-guide-2026';
 
 // Blog post registry - add new posts here
 export const BLOG_POSTS: JournalPost[] = [
+  tradeLicenseRenewalCompleteGuide2026,
   tradeLicenseRenewal2026,
   dubaiInvestorVisaProcess2026,
   corporateProServices2026,
