@@ -29,6 +29,16 @@ I've identified and fixed the main SEO issues that were preventing your website 
 ### 4. **Sitemap.xml Updates** ✅
 - **Fixed**: All URLs now point to `bluemarkdcs.com` domain
 - **Proper structure**: Includes all service pages with appropriate priorities
+- **Dynamic Generation**: Automated sitemap generation script that includes:
+  - All static pages (Home, About, Contact, Location, etc.)
+  - All service pages (9 services)
+  - All blog posts/journal articles (8 articles)
+  - All business updates (3 updates)
+  - Application form pages
+  - Detailed services page
+  - Automatically updates lastmod dates to current date
+  - Generates both XML and text sitemaps
+  - Runs automatically during build process
 
 ## Next Steps to Get Your Website Indexed
 
@@ -78,6 +88,36 @@ Submit your business to:
 
 2. **Service Pages**: Create dedicated pages for each service category
 
+## Sitemap Management
+
+### Automated Sitemap Generation
+Your project now includes an automated sitemap generation system:
+
+1. **Script Location**: `generate-sitemap.js` (root directory)
+2. **Automatic Execution**: Runs automatically during `npm run build`
+3. **Manual Execution**: Run `npm run sitemap` to regenerate anytime
+4. **Output Files**:
+   - `public/sitemap.xml` - XML sitemap for search engines
+   - `public/sitemap.txt` - Text sitemap for reference
+
+### What's Included in the Sitemap
+The sitemap generator automatically includes:
+- **Static Pages**: Home, About, Contact, Location, Detailed Services
+- **Service Pages**: All 9 service categories with `/service/:id` URLs
+- **Blog/Journal Pages**: All 8 blog posts with `/journals/:id` URLs  
+- **Business Updates**: All 3 business updates with `/business-update/:id` URLs
+- **Application Forms**: `/apply` and service-specific apply pages
+- **Admin Pages**: `/admin-login` (low priority)
+
+### How to Add New Content
+When you add new content:
+1. **Blog Posts**: Add new `.ts` file to `src/data/blog-posts/` and update `index.ts`
+2. **Business Updates**: Add new `.ts` file to `src/data/business-updates/` and update `index.ts`
+3. **Services**: Update `SERVICES` array in `src/constants.ts`
+4. **Pages**: Add new route in `src/App.tsx` if creating new page
+
+The sitemap will automatically include new content on the next build.
+
 ## Technical SEO Checklist
 
 ### ✅ **Completed**
@@ -89,6 +129,7 @@ Submit your business to:
 - [x] Open Graph tags
 - [x] Twitter Card tags
 - [x] Geo location tags
+- [x] Dynamic sitemap generation
 
 ### 🔄 **To Monitor**
 - [ ] Google Search Console indexing status
