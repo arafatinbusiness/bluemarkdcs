@@ -18,7 +18,5 @@
   "installCommand": "npm install",
   "devCommand": "npm run dev",
   "regions": ["dub1"],
-  "public": true,
-  "cleanUrls": true,
-  "trailingSlash": false
+  "public": true
 }
