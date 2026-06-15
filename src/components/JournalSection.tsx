@@ -47,9 +47,11 @@ export default function JournalSection() {
               </div>
               
               <div className="p-6 flex flex-col flex-grow">
-                <h3 className="text-lg font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors line-clamp-2">
-                  {post.title}
-                </h3>
+                <Link to={`/journals/${post.id}`}>
+                  <h3 className="text-lg font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors line-clamp-2">
+                    {post.title}
+                  </h3>
+                </Link>
                 <p className="text-gray-600 text-sm leading-relaxed mb-6 line-clamp-3">
                   {post.excerpt}
                 </p>

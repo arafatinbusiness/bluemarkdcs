@@ -5,7 +5,7 @@ const dubaiMainlandCompanyLicenseRenewal2026: JournalPost = {
   title: 'Dubai Mainland Company License Renewal Process 2026',
   excerpt: 'Renewing your Mainland Trade License in Dubai is now easier than ever. Follow this step-by-step guide for a smooth, hassle-free, and timely renewal process.',
   date: 'June 2026',
-  image: '/assets/businesssetup.png',
+  image: '/assets/mainlanddubai-trade-license-renewal.jpg',
   content: `
     <section className="mb-12">
       <h2>Dubai Mainland Company License Renewal Process 2026</h2>
