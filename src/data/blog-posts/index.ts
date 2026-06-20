@@ -8,9 +8,11 @@ import tradeLicenseRenewal2026 from './trade-license-renewal-dubai-2026';
 import dubaiMainlandCompanyLicenseRenewal2026 from './dubai-mainland-company-license-renewal-2026';
 import dubaiMainlandEmploymentVisa2026 from './dubai-mainland-employment-visa-2026';
 import dubaiMainlandEmploymentVisaRenewal2026 from './dubai-mainland-employment-visa-renewal-2026';
+import uaeVisaFineWaiver2026 from './uae-visa-fine-waiver-2026';
 
 // Blog post registry - add new posts here
 export const BLOG_POSTS: JournalPost[] = [
+  uaeVisaFineWaiver2026,
   dubaiMainlandEmploymentVisaRenewal2026,
   dubaiMainlandEmploymentVisa2026,
   dubaiMainlandCompanyLicenseRenewal2026,
