@@ -9,9 +9,11 @@ import dubaiMainlandCompanyLicenseRenewal2026 from './dubai-mainland-company-lic
 import dubaiMainlandEmploymentVisa2026 from './dubai-mainland-employment-visa-2026';
 import dubaiMainlandEmploymentVisaRenewal2026 from './dubai-mainland-employment-visa-renewal-2026';
 import uaeVisaFineWaiver2026 from './uae-visa-fine-waiver-2026';
+import mohreDemographicDiversityVisaBlock2026 from './mohre-demographic-diversity-visa-block-2026';
 
 // Blog post registry - add new posts here
 export const BLOG_POSTS: JournalPost[] = [
+  mohreDemographicDiversityVisaBlock2026,
   uaeVisaFineWaiver2026,
   dubaiMainlandEmploymentVisaRenewal2026,
   dubaiMainlandEmploymentVisa2026,
