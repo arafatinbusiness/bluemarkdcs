@@ -10,9 +10,13 @@ import dubaiMainlandEmploymentVisa2026 from './dubai-mainland-employment-visa-20
 import dubaiMainlandEmploymentVisaRenewal2026 from './dubai-mainland-employment-visa-renewal-2026';
 import uaeVisaFineWaiver2026 from './uae-visa-fine-waiver-2026';
 import mohreDemographicDiversityVisaBlock2026 from './mohre-demographic-diversity-visa-block-2026';
+import uaeIloeInsuranceFineGuide2026 from './uae-iloe-insurance-fine-guide-2026';
+import virtualEjariDubaiGuide2026 from './virtual-ejari-dubai-guide-2026';
 
 // Blog post registry - add new posts here
 export const BLOG_POSTS: JournalPost[] = [
+  virtualEjariDubaiGuide2026,
+  uaeIloeInsuranceFineGuide2026,
   mohreDemographicDiversityVisaBlock2026,
   uaeVisaFineWaiver2026,
   dubaiMainlandEmploymentVisaRenewal2026,
