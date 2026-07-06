@@ -48,16 +48,16 @@ export default function Journals() {
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                     referrerPolicy="no-referrer"
                   />
-                  <div className="absolute top-6 left-6 bg-white/90 backdrop-blur-md px-4 py-2 rounded-2xl flex items-center gap-2 text-sm font-bold text-gray-700 shadow-sm">
-                    <Calendar size={16} className="text-blue-600" />
-                    {post.date}
-                  </div>
                 </div>
                 
                 <div className="p-8 flex flex-col flex-grow">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors leading-tight">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors leading-tight">
                     {post.title}
                   </h3>
+                  <div className="flex items-center gap-2 text-sm font-bold text-gray-500 mb-4">
+                    <Calendar size={16} className="text-blue-600" />
+                    {post.date}
+                  </div>
                   <p className="text-gray-600 leading-relaxed mb-8 font-medium">
                     {post.excerpt}
                   </p>

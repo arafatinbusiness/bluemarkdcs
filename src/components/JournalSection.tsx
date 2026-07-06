@@ -40,18 +40,18 @@ export default function JournalSection() {
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                   referrerPolicy="no-referrer"
                 />
-                <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-3 py-1.5 rounded-xl flex items-center gap-2 text-xs font-bold text-gray-700 shadow-sm">
-                  <Calendar size={14} className="text-blue-600" />
-                  {post.date}
-                </div>
               </div>
               
               <div className="p-6 flex flex-col flex-grow">
                 <Link to={`/journals/${post.id}`}>
-                  <h3 className="text-lg font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors line-clamp-2">
+                  <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors line-clamp-2">
                     {post.title}
                   </h3>
                 </Link>
+                <div className="flex items-center gap-2 text-xs font-bold text-gray-500 mb-3">
+                  <Calendar size={14} className="text-blue-600" />
+                  {post.date}
+                </div>
                 <p className="text-gray-600 text-sm leading-relaxed mb-6 line-clamp-3">
                   {post.excerpt}
                 </p>
