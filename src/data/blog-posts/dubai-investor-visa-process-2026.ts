@@ -269,8 +269,8 @@ const dubaiInvestorVisaProcess2026: JournalPost = {
             </div>
           </div>
           <div className="mb-6 text-blue-100">
-            <p className="font-bold text-lg">📍 SF 18, Level 2, Dubai Shopping Centre, Besides City Centre Deira, Dubai, UAE</p>
-            <p className="mt-2 text-lg">📞 +971 56 622 9773 | ✉️ bluemarkdcs@gmail.com</p>
+            <p className="font-bold text-lg">� WhatsApp: +971 56 622 9773</p>
+            <p className="mt-2 text-lg">� Email: info@bluemarkdcs.com</p>
           </div>
         </div>
       </div>

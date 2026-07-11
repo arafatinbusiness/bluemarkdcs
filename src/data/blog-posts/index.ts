@@ -13,9 +13,11 @@ import mohreDemographicDiversityVisaBlock2026 from './mohre-demographic-diversit
 import uaeIloeInsuranceFineGuide2026 from './uae-iloe-insurance-fine-guide-2026';
 import virtualEjariDubaiGuide2026 from './virtual-ejari-dubai-guide-2026';
 import uaePoliceClearanceCertificate2026 from './uae-police-clearance-certificate-2026';
+import armeniaVisaFreeTravel2026 from './armenia-visa-free-travel-2026';
 
 // Blog post registry - add new posts here
 export const BLOG_POSTS: JournalPost[] = [
+  armeniaVisaFreeTravel2026,
   uaePoliceClearanceCertificate2026,
   virtualEjariDubaiGuide2026,
   uaeIloeInsuranceFineGuide2026,
