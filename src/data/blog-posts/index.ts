@@ -14,9 +14,17 @@ import uaeIloeInsuranceFineGuide2026 from './uae-iloe-insurance-fine-guide-2026'
 import virtualEjariDubaiGuide2026 from './virtual-ejari-dubai-guide-2026';
 import uaePoliceClearanceCertificate2026 from './uae-police-clearance-certificate-2026';
 import armeniaVisaFreeTravel2026 from './armenia-visa-free-travel-2026';
+import uaeCorporateTaxRegistration2026 from './uae-corporate-tax-registration-2026';
+import uaeDocumentAttestationMofaGuide2026 from './uae-document-attestation-mofa-guide-2026';
+import uaePartnerVisaFamilyVisaConversionCaseStudy2026 from './uae-partner-visa-family-visa-conversion-case-study-2026';
+import uaeOutPassExitPermitGuide2026 from './uae-out-pass-exit-permit-guide-2026';
 
 // Blog post registry - add new posts here
 export const BLOG_POSTS: JournalPost[] = [
+  uaeOutPassExitPermitGuide2026,
+  uaePartnerVisaFamilyVisaConversionCaseStudy2026,
+  uaeDocumentAttestationMofaGuide2026,
+  uaeCorporateTaxRegistration2026,
   armeniaVisaFreeTravel2026,
   uaePoliceClearanceCertificate2026,
   virtualEjariDubaiGuide2026,
