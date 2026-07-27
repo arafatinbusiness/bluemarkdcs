@@ -8,6 +8,18 @@
       }
     },
     {
+      "src": "/pages/(.*)",
+      "dest": "/pages/$1"
+    },
+    {
+      "src": "/journals/(.*)",
+      "dest": "/pages/$1/index.html"
+    },
+    {
+      "src": "/business-update/(.*)",
+      "dest": "/pages/$1/index.html"
+    },
+    {
       "src": "/(.*)",
       "dest": "/index.html"
     }
@@ -18,5 +30,4 @@
   "installCommand": "npm install",
   "devCommand": "npm run dev",
   "regions": ["dub1"]
-
 }

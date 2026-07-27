@@ -47,19 +47,23 @@ urls.push(createUrl(`${BASE_URL}/apply`, '0.8', 'monthly'));
 // 5. Journals listing page
 urls.push(createUrl(`${BASE_URL}/journals`, '0.7', 'weekly'));
 
-// 6. Journal detail pages
+// 6. Journal detail pages (static HTML pages)
 const blogPosts = getAllBlogPosts();
 blogPosts.forEach(post => {
   urls.push(createUrl(`${BASE_URL}/journals/${post.id}`, '0.7', 'monthly'));
+  // Also include the static page directory
+  urls.push(createUrl(`${BASE_URL}/pages/${post.id}/`, '0.6', 'monthly'));
 });
 
 // 7. Business updates listing page
 urls.push(createUrl(`${BASE_URL}/business-updates`, '0.7', 'weekly'));
 
-// 8. Business update detail pages
+// 8. Business update detail pages (static HTML pages)
 const businessUpdates = getAllBusinessUpdates();
 businessUpdates.forEach(update => {
   urls.push(createUrl(`${BASE_URL}/business-update/${update.id}`, '0.7', 'monthly'));
+  // Also include the static page directory
+  urls.push(createUrl(`${BASE_URL}/pages/${update.id}/`, '0.6', 'monthly'));
 });
 
 // 9. About page
@@ -74,7 +78,10 @@ urls.push(createUrl(`${BASE_URL}/location`, '0.7', 'monthly'));
 // 12. Detailed services page
 urls.push(createUrl(`${BASE_URL}/detailed-services`, '0.8', 'monthly'));
 
-// 13. Admin login (low priority, can be excluded by search engines)
+// 13. Pages directory listing
+urls.push(createUrl(`${BASE_URL}/pages/`, '0.5', 'weekly'));
+
+// 14. Admin login (low priority, can be excluded by search engines)
 urls.push(createUrl(`${BASE_URL}/admin-login`, '0.3', 'monthly'));
 
 // Generate XML

@@ -72,6 +72,9 @@ node_modules/
 build/
 dist/
 
+# Generated static blog/business update pages (regenerated on build)
+public/pages/
+
 # OS files
 .DS_Store
 
