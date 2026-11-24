@@ -29,8 +29,15 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <h4 className="font-bold text-xl text-gray-900 mb-1">Our Office</h4>
-                  <p className="text-gray-600">SF 18, Level 2, Dubai Shopping Centre</p>
-                  <p className="text-gray-600">Besides City Centre Metro Exit 4, Deira, Dubai</p>
+                  <a 
+                    href="https://maps.app.goo.gl/qsrVmEDHa5nTJLjN7" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="group block"
+                  >
+                    <p className="text-gray-600 group-hover:text-[#C41E3A] transition-colors">Office No- 20, Capital City Business Centre</p>
+                    <p className="text-gray-600 group-hover:text-[#C41E3A] transition-colors">Near Abu Bakker Al Siddiq Metro Station Exit 1, Deira, Dubai-UAE</p>
+                  </a>
                 </div>
               </div>
 

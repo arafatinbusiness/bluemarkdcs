@@ -31,7 +31,7 @@ export default function Location() {
             <div className="aspect-video bg-gray-200 rounded-[3rem] overflow-hidden shadow-2xl relative border border-gray-100">
               {/* Google Maps Embed */}
               <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3608.5158358375184!2d55.333371799999995!3d25.253227399999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5d3f7b619d6f%3A0x626684c6ce1c091a!2sBlueMark%20Documents%20Clearing%20Services%20LLC!5e0!3m2!1sen!2sbd!4v1774768757562!5m2!1sen!2sbd" 
+                src="https://maps.google.com/maps?q=25.271106,55.334691&z=17&output=embed" 
                 width="100%" 
                 height="100%" 
                 style={{ border: 0 }}
@@ -53,11 +53,11 @@ export default function Location() {
                   </div>
                   <div className="text-center">
                     <h4 className="text-2xl font-black text-gray-900 mb-2">OUR HEADQUARTERS</h4>
-                    <p className="text-gray-600 font-bold">SF 18, Level 2, Dubai Shopping Centre</p>
-                    <p className="text-gray-500 text-sm mt-2">Besides City Centre Metro Exit 4, Deira, Dubai</p>
+                    <p className="text-gray-600 font-bold">Office No- 20, Capital City Business Centre</p>
+                    <p className="text-gray-500 text-sm mt-2">Near Abu Bakker Al Siddiq Metro Station Exit 1, Deira, Dubai-UAE</p>
                   </div>
                   <a 
-                    href="https://maps.app.goo.gl/NzTQ7ExDVthJVNSR6" 
+                    href="https://maps.app.goo.gl/qsrVmEDHa5nTJLjN7" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="w-full flex items-center justify-center gap-3 bg-blue-600 text-white p-4 rounded-2xl font-black shadow-xl shadow-blue-200 hover:bg-blue-700 transition-all active:scale-95 group"

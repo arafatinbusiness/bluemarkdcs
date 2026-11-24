@@ -52,7 +52,14 @@ export default function Footer() {
             <ul className="flex flex-col gap-6 text-gray-400 font-medium">
               <li className="flex items-start gap-4">
                 <MapPin size={20} className="text-[#C41E3A] shrink-0 mt-1" />
-                <span>SF 18, Level 2, Dubai Shopping Centre, Besides City Centre Metro Exit 4, Deira, Dubai</span>
+                <a 
+                  href="https://maps.app.goo.gl/qsrVmEDHa5nTJLjN7" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:text-[#C41E3A] transition-colors"
+                >
+                  Office No- 20, Capital City Business Centre, Near Abu Bakker Al Siddiq Metro Station Exit 1, Deira, Dubai-UAE
+                </a>
               </li>
               <li className="flex items-center gap-4">
                 <Phone size={20} className="text-[#C41E3A] shrink-0" />
