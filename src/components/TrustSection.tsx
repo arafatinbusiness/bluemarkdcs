@@ -45,7 +45,7 @@ export default function TrustSection() {
 
           <div className="text-center">
             <button 
-              onClick={() => window.open('https://maps.app.goo.gl/ENVCfMhY2uzK4dH89', '_blank')}
+              onClick={() => window.open('https://maps.app.goo.gl/qsrVmEDHa5nTJLjN7', '_blank')}
               className="inline-flex items-center gap-3 bg-white text-[#C41E3A] px-8 py-4 rounded-2xl font-bold text-lg hover:bg-red-50 transition-all shadow-xl shadow-red-900/20 active:scale-95"
             >
               <span className="text-xl">📍</span>
